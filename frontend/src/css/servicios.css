@@ -141,7 +141,7 @@
     transition: background 0.3s ease;
 }
 .pedirPlan:hover {
-    background: rgb(0, 120, 200);
+    background: rgba(0, 174, 255, 0.9);
 }
 .recomendado {
     position: absolute;
