@@ -1,0 +1,131 @@
+/* Introduccion */
+.introduccion {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 100px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-bottom: 1px solid rgb(0, 0, 85, 0.400);
+}
+.imagenIntroduccion img {
+    width: 500px;
+    border-radius: 2vh;
+    margin-left: 50px;
+}
+
+/* Valores */
+.introValores {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgb(0, 0, 85, 0.400);
+}
+.valores {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    gap: 20px;
+}
+.tarjeta {
+    padding: 20px;
+    margin: 20px;
+    border-left: 5px solid rgb(0, 0, 85);
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.20);
+    border-radius: 1vh;
+    transition: transform 0.3s ease;
+}
+.tarjeta:hover {
+    transform: scale(1.05);
+    border-left: 5px solid rgb(0, 175, 255, 0.400);
+}
+
+/* Como trabajamos */
+.trabajamos {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgb(0, 0, 85, 0.600);
+}
+.tarjetasTrabajamos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    gap: 20px;
+}
+.tarjetaPasos {
+    padding: 20px;
+    margin: 20px;
+    border-left: 5px solid rgb(0, 0, 85);
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.20);
+    border-radius: 1vh;
+    transition: transform 0.3s ease;
+}
+.tarjetaPasos:hover {
+    transform: scale(1.05);
+    border-left: 5px solid rgb(0, 175, 255, 0.600);
+}
+.num{
+    display: inline-block;
+    background-color: rgb(0, 175, 255, 0.400);
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+/* Final de la pagina */
+.resumen{
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-bottom: 100px;
+}
+
+/* ------------------------------- Tablets ------------------------------- */
+@media (max-width: 850px) {
+    /* Introduccion en una columna */
+    .introduccion {
+        margin-top: 50px;
+        flex-direction: column;
+        align-items: start;
+    }
+    .imagenIntroduccion img {
+        width: 450px;
+        margin-top: 30px;
+    }
+    
+    /* Como trabajamos */
+    .tarjetasTrabajamos {
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+/* ------------------------------- Moviles ------------------------------- */
+@media (max-width: 500px) {
+    /* Introduccion en una columna */
+    .introduccion {
+        margin-top: 100px;
+    }
+    .imagenIntroduccion img {
+        width: 250px;
+    }
+    .valores {
+        width: 100%;
+    }
+
+    /* Como trabajamos en una columna */
+    .tarjetasTrabajamos {
+        display: block;
+    }
+}

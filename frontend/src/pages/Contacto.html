@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LimbratSolutions</title>
+    <link rel="icon" href="../../public/imagenes/logo2.png">
+
+    <link rel="stylesheet" href="../css/estructura.css">
+    <link rel="stylesheet" href="../css/contacto.css">
+
+    <script src="../js/menu.js" defer></script>
+    <script src="../../../backend/src/server.js" defer></script>
+</head>
+
+<body>
+    <!--Menu de paginas-->
+    <div class="menu">
+        <div class="empresa">
+            <img src="../../public/imagenes/logo.png">
+            <h2>LimbratSolutions</h2>
+        </div>
+        <div class="paginas">
+            <a href="Inicio.html">Inicio</a>
+            <a href="Servicios.html">Servicios</a>
+            <a href="Empresa.html">Empresa</a>
+            <a href="Contacto.html">Contacto</a>
+        </div>
+    </div>
+
+    <!--Formulario de contacto-->
+    <div class="contacto">
+        <div>
+            <h2>Contacto</h2>
+            <p>Cuéntanos qué necesitas y te damos toda la informacion necesaria. Solicita tu prueba gratuita, sin compromiso.</p>
+            <p><b>Horario de atención:</b> Lunes a viernes de 8:00 a 15:00</p>
+            <p><b>Email:</b> limbratsolutions@gmail.com</p>
+            <p><b>Teléfono:</b> +34 672 49 85 09</p>
+        </div>
+
+        <form class="formulario" id="formulario" action="/enviar" method="POST">
+            <label>Nombre</label>
+            <input type="text" id="nombre" name="nombre">
+
+            <label>Email</label>
+            <input type="email" id="email" name="email">
+
+            <label>Servicio que te interesa</label>
+            <select class="servicio" id="servicio" name="servicio">
+                <option value="0">Selecciona un servicio</option>
+                <option value="Soporte y mantenimiento">Soporte y mantenimiento</option>
+                <option value="Redes y WiFi">Redes y WiFi</option>
+                <option value="Copias de seguridad">Copias de seguridad</option>
+                <option value="Ciberseguridad básica">Ciberseguridad básica</option>
+                <option value="Plan Básico">Plan Básico</option>
+                <option value="Plan Profesional">Plan Profesional</option>
+                <option value="Plan Completo">Plan Completo</option>
+                <option value="Aún no lo sé">Aún no lo sé</option>
+            </select>
+
+            <label>Mensaje</label>
+            <textarea id="mensaje" name="mensaje" ></textarea>
+
+            <label class="privacidad"><input type="checkbox" id="privacidad" name="privacidad">
+                <span>He leído y acepto la <a href="Privacidad.html">política de privacidad</a>.</span>
+            </label>
+
+            <p class="proteccionDatos"><b>Información básica sobre protección de datos.</b> Responsable: LimbratSolutions.
+                Finalidad: responder a tu consulta. Legitimación: tu consentimiento. Destinatarios: no se ceden datos a
+                terceros salvo obligación legal; el envío se gestiona mediante el proveedor Web3Forms. Derechos: acceso,
+                rectificación, supresión y otros, en limbratsolutions@gmail.com. Más información en la 
+                <a href="Privacidad.html">política de privacidad</a>.
+            </p>
+
+            <p id="errorFormulario" class="errorFormulario"></p>
+
+            <button type="submit" class="enviar">Enviar mensaje</button>
+        </form>
+    </div>
+
+    <!--Pie de pagina-->
+    <footer class="footer">
+        <div class="seccion">
+            <p>©LimbratSolutions</p>
+            <p>Todos los derechos reservados</p>
+            <p>
+                <a href="AvisoLegal.html">Aviso legal</a> · 
+                <a href="Privacidad.html">Privacidad</a>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
