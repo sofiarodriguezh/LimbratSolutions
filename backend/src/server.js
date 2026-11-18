@@ -1,4 +1,4 @@
-//----------------------------------Seleccionar plan desde URL------------------------------------
+// ---------------------------------- Seleccionar plan desde URL ------------------------------------
 const parametros = new URLSearchParams(window.location.search);
 const planSeleccionado = parametros.get("plan");
 
@@ -13,7 +13,7 @@ const planes = {
 if (planes[planSeleccionado]) {
     selectServicio.value = planes[planSeleccionado];
 }
-//----------------------------------Formulario de contacto------------------------------------
+// ---------------------------------- Formulario de contacto ------------------------------------
 const WEB3FORMS_KEY = 'be6b0a3d-c10a-46e7-9421-b12fb56b9517';
 
 const formulario = document.getElementById("formulario");
