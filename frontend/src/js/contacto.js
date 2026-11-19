@@ -1,18 +1,3 @@
-// ---------------------------------- Seleccionar plan desde URL ------------------------------------
-const parametros = new URLSearchParams(window.location.search);
-const planSeleccionado = parametros.get("plan");
-
-const selectServicio = document.getElementById("servicio");
-
-const planes = {
-    basico: "Plan Básico",
-    profesional: "Plan Profesional",
-    completo: "Plan Completo"
-};
-
-if (planes[planSeleccionado]) {
-    selectServicio.value = planes[planSeleccionado];
-}
 // ---------------------------------- Formulario de contacto ------------------------------------
 const WEB3FORMS_KEY = 'be6b0a3d-c10a-46e7-9421-b12fb56b9517';
 
