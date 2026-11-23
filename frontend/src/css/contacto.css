@@ -1,0 +1,98 @@
+/* Contenedor */
+.contacto {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 120px;
+    margin-bottom: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+}
+
+/* Formulario */
+.formulario {
+    margin-left: 30px;
+}
+.formulario label {
+    font-size: 15px;
+    font-weight: bold;
+    display: grid;
+    padding-bottom: 10px;
+}
+.formulario input, .formulario textarea, .formulario select{
+    background-color: rgba(0, 175, 255, 0.030);
+    border: 1px solid rgb(0, 0, 85);
+    border-radius: 10px;
+    padding: 15px 0 15px 5px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.formulario input:focus, .formulario textarea:focus {
+    background-color: rgba(0, 175, 255, 0.150);
+}
+.formulario textarea {
+    height: 150px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+/* Privacidad y proteccion de datos */
+.formulario label.privacidad {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 6px;
+    padding-bottom: 10px;
+}
+.privacidad input[type="checkbox"] {
+    accent-color: rgb(0, 0, 85);
+    width: auto;
+    margin: 0;
+    padding: 0;
+}
+.proteccionDatos {
+    margin-top: 10px;
+    color: rgb(87, 87, 87);
+    font-size: 13px;
+}
+.proteccionDatos b {
+    color: black;
+    font-size: 15px;
+}
+
+/* Boton enviar */
+.enviar {
+    cursor: pointer;
+    margin-top: 20px;
+    padding: 13px 24px;
+    border-radius: 20vh;
+    color: white;
+    background-color: rgb(0, 0, 85);
+    border: none;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+/* Mensaje de error */
+.errorFormulario {
+    color: red;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+/* ------------------------------- Tbalets ------------------------------- */
+@media (max-width: 850px) {
+    /* Contenedor en una columna */
+    .contacto {
+        margin-top: 150px;
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+}
+
+/* ------------------------------- Moviles ------------------------------- */
+@media (max-width: 500px) {
+    /* Contenedor en una columna */
+    .contacto {
+        margin-top: 200px;
+    }
+}
